@@ -1,0 +1,211 @@
+.footer_wrapper {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer_wrapper a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer_wrapper a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.input-text,
+.text-area {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+.input-btn {
+  padding: 10px 20px;
+  background: #f16e00;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.input-btn:hover {
+  background: #d95f00;
+}
+
+.quick-contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+}
+
+.me-2 {
+  margin-right: 8px;
+}
+
+.text-start {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.footer_wrapper {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  position: relative;
+  min-height: 400px; /* Thiết lập chiều cao tối thiểu */
+}
+
+.contact_section h2 {
+  font-size: 42px; /* Tăng kích thước tiêu đề */
+  font-weight: 700;
+  color: #ecf0f1;
+  position: relative;
+}
+
+.contact_section h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px; /* Tăng độ rộng của gạch chân */
+  height: 4px; /* Tăng độ dày của gạch chân */
+  background: #3498db;
+}
+
+.contact_section h4 {
+  font-size: 24px; /* Tăng kích thước tiêu đề phụ */
+  margin-bottom: 25px;
+  color: #3498db;
+  font-weight: 600;
+}
+
+.contact_section p {
+  margin-bottom: 18px; /* Tăng khoảng cách giữa các dòng */
+  font-size: 16px; /* Tăng kích thước chữ */
+  line-height: 1.8; /* Tăng line height */
+}
+
+.contact_section a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact_section a:hover {
+  color: #3498db;
+}
+
+.contact_section i {
+  color: #3498db;
+  width: 25px; /* Tăng kích thước icon */
+  text-align: center;
+  font-size: 18px; /* Tăng kích thước icon */
+}
+
+/* Tăng kích thước logo */
+.contact_section img {
+  width: 160px !important; /* Ghi đè width đã đặt trong HTML */
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.contact_section img:hover {
+  transform: scale(1.05);
+}
+
+.quick-contact-form {
+  margin-top: 25px;
+}
+
+.input-text {
+  width: 100%;
+  padding: 15px 18px; /* Tăng padding cho input */
+  margin-bottom: 20px; /* Tăng khoảng cách giữa các input */
+  border: none;
+  border-radius: 6px; /* Tăng bo góc */
+  background-color: rgba(236, 240, 241, 0.1);
+  color: #ecf0f1;
+  transition: all 0.3s ease;
+  font-size: 16px; /* Tăng font size */
+}
+
+.input-text:focus {
+  outline: none;
+  background-color: rgba(236, 240, 241, 0.2);
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.7);
+}
+
+.input-text::placeholder {
+  color: #bdc3c7;
+}
+
+.text-area {
+  resize: none;
+  height: 120px; /* Tăng chiều cao của textarea */
+}
+
+.input-btn {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 15px 30px; /* Tăng padding cho button */
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-size: 16px; /* Tăng font size */
+  margin-top: 10px; /* Thêm margin top */
+}
+
+.input-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px); /* Tăng hiệu ứng hover */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact_section h2 {
+    font-size: 32px;
+  }
+  
+  .contact_section h4 {
+    font-size: 22px;
+  }
+  
+  .footer_wrapper {
+    padding: 60px 0 40px;
+    min-height: 350px; /* Điều chỉnh chiều cao tối thiểu cho màn hình nhỏ */
+  }
+}
+
+/* Thêm đường viền đẹp ở dưới cùng */
+.footer_wrapper:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px; /* Tăng độ dày của border dưới */
+  background: linear-gradient(to right, #3498db, #2ecc71, #9b59b6);
+}
+
+/* Thêm padding cho các cột */
+.col-lg-3, .col-lg-4 {
+  padding: 0 25px;
+}
+
+/* Thêm khoảng cách dưới tổng thể */
+.page_section.contact {
+  margin-bottom: 40px;
+}

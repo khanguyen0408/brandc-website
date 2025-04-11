@@ -1,0 +1,87 @@
+/* CSS cho dropdown menu */
+
+/* Thiết lập vị trí cho dropdown container */
+.nav-item.dropdown {
+  position: relative;
+}
+
+/* Thiết lập kiểu mặc định cho dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  min-width: 150px;
+  padding: 10px 0;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Hiển thị dropdown khi hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Định dạng các mục trong dropdown */
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 8px 20px;
+  clear: both;
+  font-weight: 400;
+  color: #333;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+/* Hiệu ứng hover cho các mục trong dropdown */
+.dropdown-menu li a:hover {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+/* Style cho icon dropdown (tùy chọn) */
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+  content: "";
+  border-top: 5px solid;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+/* Thêm animation đơn giản cho dropdown menu */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  animation: fadeIn 0.3s ease forwards;
+}
+/* CSS bổ sung khi sử dụng JavaScript */
+
+/* Ẩn dropdown mặc định */
+.dropdown-menu {
+  display: none;
+}
+
+/* Hiển thị dropdown khi có class show */
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Style cho dropdown khi active */
+.nav-item.dropdown.show .dropdown-toggle {
+  color: #007bff; /* Màu khi dropdown đang mở */
+}
