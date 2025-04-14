@@ -12,7 +12,7 @@ for (let i = 1; i <= 50; i++) {
 
 const slider = document.getElementById("slider");
 let currentIndex = 0;
-const imagesPerSlide = 15;
+const imagesPerSlide = 10;
 const totalSlides = Math.ceil(images.length / imagesPerSlide);
 
 // Tạo các slide

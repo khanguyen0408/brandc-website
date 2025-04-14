@@ -188,18 +188,6 @@
     min-height: 350px; /* Điều chỉnh chiều cao tối thiểu cho màn hình nhỏ */
   }
 }
-
-/* Thêm đường viền đẹp ở dưới cùng */
-.footer_wrapper:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 6px; /* Tăng độ dày của border dưới */
-  background: linear-gradient(to right, #3498db, #2ecc71, #9b59b6);
-}
-
 /* Thêm padding cho các cột */
 .col-lg-3, .col-lg-4 {
   padding: 0 25px;

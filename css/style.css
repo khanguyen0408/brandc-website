@@ -912,34 +912,7 @@ transition: all .25s ease;
 /* Footer
 ---------------------------------*/
 
-.footer_wrapper {
-    background: #232323;
-}
 
-.footer_bottom {
-    border-top: 1px solid #3C3A3A;
-    padding: 25px 0;
-}
-
-.footer_bottom span {
-    display: block;
-    font-size: 14px;
-    color: #cccccc;
-    text-align: center;
-}
-
-.footer_bottom span a {
-    display: inline-block;
-    color: #005490;
-    font-size: 16px;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
-
-.footer_bottom span a:hover {
-    color: #fff;
-}
 
 /* Animation Timers
 ---------------------------------*/
