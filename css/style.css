@@ -1645,3 +1645,14 @@ display: block;
 padding-top: 18px;
 }
 }
+.inner_wrapper img {
+border-radius: 100%;
+}
+.name-label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+  }
+  

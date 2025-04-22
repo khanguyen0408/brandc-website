@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Hàm đọc file text.txt
     function fetchTextFile(index) {
-        const textFilePath = `img/blog/${index}/text.txt`;
+        const textFilePath = `blog/${index}/text.txt`;
         var fileReader = new FileReader();
         
         fetch(textFilePath)
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Thêm thông tin vào mảng blog posts
                 blogPosts.push({
-                    imgPath: `img/blog/${index}/img`,
+                    imgPath: `blog/${index}/img`,
                     title: title,
                     link: link,
                     index: index
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Sử dụng dữ liệu mặc định khi không tải được file
                 blogPosts.push({
-                    imgPath: `img/blog/${index}/img`,
+                    imgPath: `blog/${index}/img`,
                     title: `Bài viết Marketing ${index}`,
                     link: 'https://brandc.vn/',
                     index: index

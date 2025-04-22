@@ -19,11 +19,6 @@
   width: 200%;
 }
 
-.service-slide {
-  width: 80%;
-  padding: 20px;
-}
-
 .service-nav {
   position: relative;
   text-align: center;
@@ -111,4 +106,35 @@
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 20px;
+}
+
+.service-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  padding: 20px;
+}
+
+.service-slide a {
+  flex: 0 0 48%; /* mỗi thẻ chiếm khoảng 48% chiều rộng */
+  text-decoration: none; /* loại bỏ gạch chân nếu cần */
+}
+
+/* css header */
+
+.language-switch {
+  padding-left: 15px;
+}
+
+.language-switch .lang-flag img {
+  width: 24px;
+  height: 16px;
+  border-radius: 2px;
+  transition: transform 0.2s ease;
+}
+
+.language-switch .lang-flag img:hover {
+  transform: scale(1.1);
 }
