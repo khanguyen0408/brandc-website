@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mảng chứa thông tin blog
     const blogPosts = [];
     let loadedCount = 0;
-    const totalImages = 14;
+    const totalImages = 15;
     
     // Tải dữ liệu từ tất cả các file text.txt
     for (let i = 1; i <= totalImages; i++) {
@@ -32,12 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Xử lý nội dung file text.txt
                 const lines = text.trim().split('\n');
                 let title = lines[0] || `Bài viết Marketing ${index}`;
-                let link = lines[1] || 'https://brandc.vn/';
+                let link = lines[1] || `blog/${index}/blog.html`;
                 
                 // Loại bỏ khoảng trắng thừa và kiểm tra URL
                 link = link.trim();
                 if (!link.startsWith('http')) {
-                    link = 'https://brandc.vn/';
+                    link = `blog/${index}/blog.html`;
                 }
                 
                 // Thêm thông tin vào mảng blog posts
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 blogPosts.push({
                     imgPath: `blog/${index}/img`,
                     title: `Bài viết Marketing ${index}`,
-                    link: 'https://brandc.vn/',
+                    link: `blog/${index}/blog.html`,
                     index: index
                 });
             })
