@@ -85,3 +85,13 @@
 .nav-item.dropdown.show .dropdown-toggle {
   color: #007bff; /* Màu khi dropdown đang mở */
 }
+
+.navbar {
+  height: 80px; /* chỉnh tùy ý */
+}
+.navbar-nav > li > a {
+  height: 80px;
+  line-height: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
