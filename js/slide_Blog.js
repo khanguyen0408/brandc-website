@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 const link = document.createElement("a");
                 link.href = post.link;
                 link.classList.add("blog_image_link");
-                link.target = "_blank";
 
                 const img = document.createElement("img");
                 img.src = post.imgPath + ".png";
