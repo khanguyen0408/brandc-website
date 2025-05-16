@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     blogSlider.appendChild(loader);
 
     // Danh sách tiêu đề blog
-    const blogTitles = [
+    const blogTitlesV = [
         "TÌM HIỂU VỀ B2B MARKETING",
         "CÁC XU HƯỚNG MARKETING TRONG NĂM 2023 (PHẦN 2)",
         "NGHỀ KOLs VÀ NHỮNG GÓC KHUẤT CHƯA AI BIẾT",
@@ -25,13 +25,39 @@ document.addEventListener('DOMContentLoaded', function () {
         "CÁCH THUẬT TOÁN TIKTOK XẾP HẠNG NỘI DUNG 2025"
     ];
 
-    // Tạo danh sách blogPosts
-    const blogPosts = blogTitles.map((title, index) => ({
+    const blogTitlesE = [
+        "UNDERSTANDING B2B MARKETING",
+        "MARKETING TRENDS IN 2023 (PART 2)",
+        "THE HIDDEN SIDES OF THE KOL PROFESSION THAT FEW KNOW ABOUT",
+        "SECRETS TO CREATING A PERFECT SEEDING SCRIPT",
+        "5 TIPS FOR EFFECTIVELY CHOOSING KOLS FOR YOUR CAMPAIGN",
+        "WHAT IF FAMOUS BRANDS WERE PERSONIFIED?",
+        "MARKETING TRENDS YOU CAN'T MISS IN 2023",
+        "WHAT DOES A TYPICAL SEEDING PROCESS LOOK LIKE?",
+        "THE BARBIE (LIVE ACTION) FILM BECAME GLOBALLY FAMOUS EVEN BEFORE ITS RELEASE THANKS TO THIS CAMPAIGN",
+        "THE APRIL FOOLS’ REVERSE CAMPAIGN: WHEN A JOKE BECAME REALITY!",
+        "WHY SHOULD YOU CHOOSE BRANDC’S SERVICES?",
+        "GOLDEN PRINCIPLES FOR RUNNING AN EFFECTIVE KOLS BOOKING CAMPAIGN",
+        "WHAT IS THE KOLS/INFLUENCERS BOOKING SERVICE AT BRANDC?",
+        "BENEFITS OF SEEDING IN MARKETING CAMPAIGNS",
+        "HOW TIKTOK'S ALGORITHM RANKS CONTENT IN 2025"
+    ];
+    
+
+    // Kiểm tra ngôn ngữ từ thẻ lang-flag
+    const langFlag = document.querySelector('.lang-flag');
+    const isEnglish = langFlag && langFlag.getAttribute('href').includes('index-en.html');
+
+    // Chọn tiêu đề và liên kết phù hợp với ngôn ngữ
+    const selectedTitles = isEnglish ? blogTitlesV : blogTitlesE;
+
+    const blogPosts = selectedTitles.map((title, index) => ({
         imgPath: `blog/${index + 1}/img`,
         title: title,
-        link: `blog/${index + 1}/blog.html`,
+        link: isEnglish ? `blog/${index + 1}/blog.html` : `blog/${index + 1}/blog-en.html`,
         index: index + 1
     }));
+    
 
     // Xóa loading
     blogSlider.removeChild(loader);
